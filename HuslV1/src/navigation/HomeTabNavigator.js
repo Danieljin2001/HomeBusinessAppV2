@@ -1,10 +1,10 @@
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/Home"; 
-
 import Feather from 'react-native-vector-icons/Feather';
 import { color } from "react-native-reanimated";
 import PostScreen from "../screens/PostScreen";
+import InboxScreen from "../screens/Inbox"
 
 
 const Tab = createBottomTabNavigator();
@@ -24,7 +24,7 @@ const HomeTabNavigator = (props) => {
                     )
                 }}
             />
-            <Tab.Screen 
+            <Tab.Screen
                 name={"Favourites"}
                 component={HomeScreen}
                 options={{
@@ -46,9 +46,8 @@ const HomeTabNavigator = (props) => {
             />
             <Tab.Screen 
                 name={"Inbox"}
-                component={HomeScreen}
+                component={InboxScreen}
                 options={{
-                    headerShown: false,
                     tabBarIcon: ({color}) => (
                         <Feather name="message-square" size={25} color={color}/>
                     )

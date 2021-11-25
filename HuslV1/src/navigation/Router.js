@@ -4,8 +4,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 import CitySearchScreen from "../screens/CitySearch";
 import HomeScreen from "../screens/Home";
 import MapScreen from "../screens/Map";
-
-
 import HomeTabNavigator from "./HomeTabNavigator";
 import PostScreen from "../screens/PostScreen";
 
