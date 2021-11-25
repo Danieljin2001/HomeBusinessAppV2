@@ -43,9 +43,9 @@ const HomeScreen = (props) => {
                 
             </View>
             <View style={{flex: 1, marginHorizontal: 20}}>
-                <Text style={{fontSize: 35, fontWeight:"500", marginTop: 30}}>Begin by{"\n"}Searching for a</Text>
+                <Text style={{fontSize: 35, fontWeight:"400", marginTop: 30}}>Begin by{"\n"}searching for a</Text>
                 <Text style={{fontSize: 45, fontWeight: "bold"}}>home-based</Text>
-                <Text style={{fontSize: 35, fontWeight:"500"}}>service in your city.</Text>
+                <Text style={{fontSize: 35, fontWeight:"400"}}>service in your city.</Text>
             </View>
             
             {/* <ImageBackground 

@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     searchButton:{
-        alignSelf: "baseline",
         backgroundColor: 'white',
         borderWidth: 1,
         borderColor: 'grey',
