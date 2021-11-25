@@ -7,9 +7,12 @@ const styles = StyleSheet.create({
         resizeMode: 'contain',
     },
     column: {
+        flex: 1.5,
         flexDirection: 'column',
+        justifyContent: "flex-end",
         alignItems: 'center',
         zIndex: 100,
+
     }, 
     title: {
         fontSize: 50,
@@ -22,14 +25,13 @@ const styles = StyleSheet.create({
     },
     findServiceButton:{
         backgroundColor: 'black',
+        marginVertical: 10,
         height: 50,
         width: 180,
         borderRadius: 20,
         justifyContent: 'center',
         alignItems: 'center',
-        position: "absolute",
-        top: 470,
-        zIndex: 100,
+        position: "relative",
     },
     findServiceButtonText:{
         color: 'white',
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     searchButton:{
+        alignSelf: "baseline",
         backgroundColor: 'white',
         borderWidth: 1,
         borderColor: 'grey',
@@ -47,9 +50,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        position: 'absolute',
-        top: 400,
-        zIndex: 100,
+        position: 'relative',
     },
     searchButtonText: {
         fontSize: 16,
