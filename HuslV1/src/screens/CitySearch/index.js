@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { View, FlatList, TextInput, Text, Pressable } from "react-native";
+import { View, FlatList, TextInput, Text, Pressable, TouchableOpacity } from "react-native";
 import styles from './styles.js';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { useNavigation } from "@react-navigation/native";
@@ -26,12 +26,16 @@ const CitySearchScreen = (props) => {
             <FlatList
                 data={searchResults}
                 renderItem={ ({item}) => (
-                <Pressable onPress= {() => naviation.navigate("Home")} style={styles.row}>
+                <TouchableOpacity 
+                    onPress= {() => naviation.navigate("Home")} 
+                    style={styles.row}
+                    activeOpacity= {0.5}
+                >
                     <View style={styles.iconContainer}>
                         <Entypo name = {"location-pin"} size={30}/>
                     </View>
                     <Text style={styles.locationText}>{item.description}</Text> 
-                </Pressable>
+                </TouchableOpacity>
                 )}
             />
         </View>

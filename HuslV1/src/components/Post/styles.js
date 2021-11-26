@@ -2,12 +2,11 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        margin: 20,
-        borderRadius: 10,
+        marginHorizontal: 10,
+        marginVertical: 20
     },    
     image: {
-        width: '100%',
-        aspectRatio: 3/2,
+        //aspectRatio: 3/2,
         resizeMode: 'cover',
         borderRadius: 10,
     },
@@ -18,7 +17,7 @@ const styles = StyleSheet.create({
         marginRight: 5,
     },
     profileRow: {
-        marginVertical: 10,
+        //marginVertical: 10,
         flexDirection: "row",
     },
     row: {
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
     },  
     priceContainer:{
-        marginTop: 3,
+        marginTop: 5,
         backgroundColor: 'salmon',
         borderRadius: 5,
         padding:2,

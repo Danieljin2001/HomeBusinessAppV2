@@ -32,6 +32,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: "relative",
+        elevation: 5,
+        shadowColor: "grey",
+        shadowRadius: 2,
+        shadowOffset: {width: 3, height: 3},
+        shadowOpacity: 0.8,
     },
     findServiceButtonText:{
         color: 'white',
@@ -50,6 +55,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         position: 'relative',
+        elevation: 5,
+        shadowColor: "grey",
+        shadowRadius: 2,
+        shadowOffset: {width: 3, height: 3},
+        shadowOpacity: 0.8,
     },
     searchButtonText: {
         fontSize: 16,

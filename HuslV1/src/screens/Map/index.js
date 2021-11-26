@@ -8,12 +8,12 @@ const {height} = Dimensions.get("window");
 
 const MapScreen = (props) => {
     return (
-        <SafeAreaView style = {{height}}>
+        <View style = {{height}}>
           <View style={styles.container}>
             <Text> Map </Text>
           </View>
           <ActionSheet/>
-        </SafeAreaView>
+        </View>
     );
 };
 
