@@ -7,7 +7,7 @@ import { View, Text, Pressable, StyleSheet, Image} from "react-native";
     return (
         <View style={styles.container}> 
             <Image source={{uri: 'https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg'}} style={styles.image} />
-            <Pressable onPress={() => navigation.navigate("Search City")} style={styles.rightContainer}>
+            <Pressable onPress={() => navigation.navigate("Message Room", { name: name })} style={styles.rightContainer}>
                 <View style={styles.row}>
                    <Text style={styles.name}>{name}</Text>
                     <Text style={styles.text}>9:30 AM</Text>
