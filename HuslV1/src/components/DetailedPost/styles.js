@@ -1,14 +1,17 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
+const {width} = Dimensions.get("window");
+const height = width / 1.5 //2 thirds of the width
+
 const styles = StyleSheet.create({
-    container: {
-        margin: 20,
+    hScroll: {
+        height: height,
+        width: width,
     },    
     image: {
-        width: '100%',
-        aspectRatio: 3/2,
+        //aspectRatio: 3/2,
         resizeMode: 'cover',
-        borderRadius: 10,
+        
     },
     profilePic: {
         width: 50,
@@ -18,15 +21,18 @@ const styles = StyleSheet.create({
     },
     profileRow: {
         marginVertical: 10,
+        marginHorizontal: 10,
         flexDirection: "row",
     },
     row: {
+        marginHorizontal: 10,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: 'space-between',
         
     },
     topButtonRow:{
+        marginHorizontal: 10,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",

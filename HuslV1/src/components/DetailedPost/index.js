@@ -1,8 +1,12 @@
 import React from "react";
-import { View, Text, Image, Pressable, ScrollView } from "react-native";
+import { View, Text, Image, Pressable, ScrollView, Dimensions, FlatList, Linking } from "react-native";
 import styles from './styles.js'; 
 import Fontisto from "react-native-vector-icons/Fontisto";
 import Feather from 'react-native-vector-icons/Feather';
+
+
+const {width} = Dimensions.get("window");
+const height = width / 1.5 //2 thirds of the width
 
 //recieve data into props
 const Post = (props) => {
@@ -11,13 +15,23 @@ const Post = (props) => {
 
     return (
         <ScrollView>
-            <View style={styles.container}>
-                {/* image */}
-                <Image 
-                    style={styles.image} 
-                    source={{uri: post.image}}
-
+            <View>
+                {/* portfolio image */}
+                <FlatList 
+                    data={post.image}
+                    pagingEnabled 
+                    horizontal 
+                    style={styles.hScroll} 
+                    renderItem={({item})=> (
+                        <Image
+                            style={styles.image}
+                            source={{uri: item}}
+                            height={height}
+                            width={width} 
+                        />
+                    )}
                 />
+            
                 {/* location and price tag*/}
                 <View style={styles.row}>
                     <Text style={styles.location}>
@@ -59,7 +73,10 @@ const Post = (props) => {
                     </Pressable>
                     <View style={{flexDirection: "row"}}>
                         {/* phone button */}
-                        <Pressable style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}>
+                        <Pressable 
+                        style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}
+                        onPress={() => {Linking.openURL(`tel:${post.phoneNumber}`).catch(e=>console.warn(e))}}
+                        >
                             <Feather name="phone" size={30}/>
                         </Pressable>
                         {/* message button */}
@@ -74,7 +91,7 @@ const Post = (props) => {
                 </View>
 
                 {/* menu */}
-                <View style={{marginTop: 20, borderTopColor: "lightgrey", borderTopWidth: 1,}}>
+                <View style={{marginTop: 20, borderTopColor: "lightgrey", borderTopWidth: 1, marginHorizontal: 10}}>
                     <Text style={{fontWeight: "bold", fontSize: 18, marginTop: 10}}>Menu:</Text>
                     <Text style={styles.menuDescription}>
                         {post.menu}

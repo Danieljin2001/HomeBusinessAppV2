@@ -27,7 +27,7 @@ const ActionSheet = (props) => {
 
     const actionSheetIntropolate = alignment.interpolate({
         inputRange: [0,1],
-        outputRange: [-height + 120, 0]
+        outputRange: [-height + 180, 0]
     });
 
     const actionSheetStyle = {
