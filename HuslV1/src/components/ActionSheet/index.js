@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { View, Text, Animated, Dimensions } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import styles from "./styles";
-import SearchResultsScreen from "../../screens/SearchResults";
+import SearchResultsScreen from "../../screens/Explore/SearchResults";
 
 const { height } = Dimensions.get("screen");
 

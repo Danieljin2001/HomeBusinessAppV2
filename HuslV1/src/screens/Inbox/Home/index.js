@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet} from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import InboxItem from "../../components/Inbox/InboxItem";
+import InboxItem from "../../../components/Inbox/InboxItem";
 
 const InboxScreen = (props) => {
     const navigation = useNavigation();

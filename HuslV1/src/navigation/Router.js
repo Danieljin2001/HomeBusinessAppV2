@@ -1,13 +1,13 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import CitySearchScreen from "../screens/CitySearch";
-import ReviewsScreen from "../screens/ReviewsScreen";
-import MessageRoom from "../screens/MessageRoom";
-import HomeScreen from "../screens/Home";
-import MapScreen from "../screens/Map";
+import CitySearchScreen from "../screens/Explore/CitySearch";
+import ReviewsScreen from "../screens/Reviews/ReviewsScreen";
+import MessageRoom from "../screens/Inbox/MessageRoom";
+import HomeScreen from "../screens/Explore/Home";
+import MapScreen from "../screens/Explore/Map";
 import HomeTabNavigator from "./HomeTabNavigator";
-import PostScreen from "../screens/PostScreen";
+import PostScreen from "../screens/Explore/PostScreen";
 
 const Stack = createStackNavigator();
 

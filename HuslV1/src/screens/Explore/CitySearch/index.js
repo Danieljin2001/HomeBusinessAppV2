@@ -4,7 +4,7 @@ import styles from './styles.js';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { useNavigation } from "@react-navigation/native";
 
-import searchResults from '../../../assets/data/search.js';
+import searchResults from '../../../../assets/data/search.js';
 
 const CitySearchScreen = (props) => {
 

@@ -9,9 +9,9 @@
 import React from 'react';
 import type {Node} from 'react';
 import { StatusBar, SafeAreaView, View, Text, Dimensions } from 'react-native';
-import HomeScreen from './src/screens/Home';
-import SearchResultsScreen from './src/screens/SearchResults';
-import CitySearchScreen from './src/screens/CitySearch';
+import HomeScreen from './src/screens/Explore/Home';
+import SearchResultsScreen from './src/screens/Explore/SearchResults';
+import CitySearchScreen from './src/screens/Explore/CitySearch';
 // import ActionSheet from './src/components/ActionSheet';
 import Router from './src/navigation/Router';
 // import MapScreen from './src/screens/Map';
