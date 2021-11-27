@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, Pressable, ScrollView, Dimensions, FlatList } from "react-native";
+import { View, Text, Image, Pressable, ScrollView, Dimensions, FlatList, Linking } from "react-native";
 import styles from './styles.js'; 
 import Fontisto from "react-native-vector-icons/Fontisto";
 import Feather from 'react-native-vector-icons/Feather';
@@ -73,7 +73,10 @@ const Post = (props) => {
                     </Pressable>
                     <View style={{flexDirection: "row"}}>
                         {/* phone button */}
-                        <Pressable style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}>
+                        <Pressable 
+                        style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}
+                        onPress={() => {Linking.openURL(`tel:${post.phoneNumber}`).catch(e=>console.warn(e))}}
+                        >
                             <Feather name="phone" size={30}/>
                         </Pressable>
                         {/* message button */}

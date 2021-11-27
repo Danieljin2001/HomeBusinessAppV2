@@ -1,6 +1,7 @@
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/Home"; 
+import ReviewsScreen from "../screens/ReviewsScreen";
 
 import Feather from 'react-native-vector-icons/Feather';
 import { color } from "react-native-reanimated";
@@ -36,7 +37,7 @@ const HomeTabNavigator = (props) => {
             />
             <Tab.Screen 
                 name={"Reviews"}
-                component={HomeScreen}
+                component={ReviewsScreen}
                 options={{
                     headerShown: false,
                     tabBarIcon: ({color}) => (

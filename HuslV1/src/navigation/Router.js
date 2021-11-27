@@ -2,6 +2,7 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import CitySearchScreen from "../screens/CitySearch";
+import ReviewsScreen from "../screens/ReviewsScreen";
 import HomeScreen from "../screens/Home";
 import MapScreen from "../screens/Map";
 
