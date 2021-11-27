@@ -5,14 +5,10 @@
  * @format
  * @flow strict-local
  */
-
-
-
 // import 'react-native-gesture-handler';
 import React from 'react';
 import type {Node} from 'react';
 import { StatusBar, SafeAreaView, View, Text, Dimensions } from 'react-native';
-
 import HomeScreen from './src/screens/Home';
 import SearchResultsScreen from './src/screens/SearchResults';
 import CitySearchScreen from './src/screens/CitySearch';
@@ -22,23 +18,19 @@ import Router from './src/navigation/Router';
 
 const { width, height} = Dimensions.get("screen");
 
-
 const App: () => Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content"/>
       <Router />
-      
       {/* <SafeAreaView> */}
-          {/* <MapScreen/> */}
+      {/* <MapScreen/> */}
       {/* <HomeScreen/> */}
       {/* <SearchResultsScreen/> */}
       {/* <CitySearchScreen/> */}
-        
       {/* </SafeAreaView> */}
     </>
   );
 };
-
 
 export default App;
