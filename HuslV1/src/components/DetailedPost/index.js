@@ -1,12 +1,15 @@
 import React from "react";
-import { View, Text, Image, Pressable, ScrollView, Dimensions, FlatList, Linking } from "react-native";
+import { View, Text, Image, Pressable, ScrollView, Dimensions, FlatList, Linking, TouchableOpacity } from "react-native";
 import styles from './styles.js'; 
 import Fontisto from "react-native-vector-icons/Fontisto";
 import Feather from 'react-native-vector-icons/Feather';
 
-
+import DetailedPostTabNav from "../DetailedPostTabNav/index.js";
+import { NavigationContainer } from "@react-navigation/native";
 const {width} = Dimensions.get("window");
 const height = width / 1.5 //2 thirds of the width
+
+
 
 //recieve data into props
 const Post = (props) => {
@@ -14,7 +17,7 @@ const Post = (props) => {
     const post = props.post;
 
     return (
-        <ScrollView>
+        <View>
             <View>
                 {/* portfolio image */}
                 <FlatList 
@@ -73,12 +76,13 @@ const Post = (props) => {
                     </Pressable>
                     <View style={{flexDirection: "row"}}>
                         {/* phone button */}
-                        <Pressable 
+                        <TouchableOpacity 
+                        activeOpacity={0.3}
                         style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}
                         onPress={() => {Linking.openURL(`tel:${post.phoneNumber}`).catch(e=>console.warn(e))}}
                         >
                             <Feather name="phone" size={30}/>
-                        </Pressable>
+                        </TouchableOpacity>
                         {/* message button */}
                         <Pressable style={{ alignSelf: 'flex-end', paddingHorizontal: 7}}>
                             <Feather name="message-square" size={30}/>
@@ -88,19 +92,14 @@ const Post = (props) => {
                             <Feather name="more-vertical" size={30}/>
                         </Pressable>
                     </View>
-                </View>
-
-                {/* menu */}
-                <View style={{marginTop: 20, borderTopColor: "lightgrey", borderTopWidth: 1, marginHorizontal: 10}}>
-                    <Text style={{fontWeight: "bold", fontSize: 18, marginTop: 10}}>Menu:</Text>
-                    <Text style={styles.menuDescription}>
-                        {post.menu}
-                    </Text>
-                </View>
-
-                
-            </View>
-        </ScrollView>
+                </View>   
+            </View> 
+            <NavigationContainer
+                independent={true}
+            >
+                <DetailedPostTabNav/> 
+            </NavigationContainer> 
+        </View>
     );
 };
 
