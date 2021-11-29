@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         borderColor: 'lightgrey'
     },
     iconContainer:{
-        backgroundColor: 'lightgrey',
+        backgroundColor: 'white',
         padding: 8,
         borderRadius: 10,
         marginRight: 15,

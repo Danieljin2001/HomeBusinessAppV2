@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions} from 'react-native';
+import color from "../../../../config/color";
 
 const styles = StyleSheet.create({
     image: {
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
 
     },
     findServiceButton:{
-        backgroundColor: 'black',
+        backgroundColor: color.primary,
         marginVertical: 10,
         height: 50,
         width: 180,
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     searchButton:{
         backgroundColor: 'white',
         borderWidth: 1,
-        borderColor: 'grey',
+        borderColor: 'lightgrey',
         height: 60,
         width: Dimensions.get('screen').width - 40, //minus -40 because push it to the left 40 and then marginhorizontal right 20
         marginHorizontal: 20,

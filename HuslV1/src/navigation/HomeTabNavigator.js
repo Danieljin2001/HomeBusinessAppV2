@@ -3,11 +3,12 @@ import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/Explore/Home"; 
 import ReviewsScreen from "../screens/Reviews/ReviewsScreen";
 
-
+// import color from "../../config/color";
 import Feather from 'react-native-vector-icons/Feather';
 import { color } from "react-native-reanimated";
 import PostScreen from "../screens/Explore/PostScreen";
 import InboxScreen from "../screens/Inbox/Home"
+import colorStyle from "../../config/color";
 
 
 const Tab = createBottomTabNavigator();
@@ -15,7 +16,7 @@ const Tab = createBottomTabNavigator();
 const HomeTabNavigator = (props) => {
     return (
         <Tab.Navigator tabBarOptions={{
-            activeTintColor: 'black',
+            activeTintColor: colorStyle.primary,
         }}>
             <Tab.Screen 
                 name={"Explore"}
