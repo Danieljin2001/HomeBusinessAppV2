@@ -12,7 +12,7 @@ import LocationScreen from "../Location/index.js";
 import ReviewsScreen from "../Reviews/index.js";
 
 const {width} = Dimensions.get("window");
-const height = width / 1.5 //2 thirds of the width
+const height = width / 1.5 //2 thirds of the width (later change to 1.25)
 
 
 
@@ -27,9 +27,8 @@ const Post = (props) => {
         <View>
             <CollapsibleContainer>
                 <CollapsibleHeaderContainer>
-            {/* HEADER */}
                     <View>
-                        {/* portfolio image */}
+                        {/* portfolio image (horizontal list)*/}
                         <FlatList 
                             data={post.image}
                             pagingEnabled 
@@ -56,6 +55,11 @@ const Post = (props) => {
                             </View>
                         </View>
                         
+                        
+                          
+                    </View>
+
+                    <StickyView>
                         {/* profilepic, store name, service type, rating*/}
                         <View style={styles.profileRow}> 
                             <Image
@@ -102,11 +106,8 @@ const Post = (props) => {
                                     <Feather name="more-vertical" size={30}/>
                                 </Pressable>
                             </View>
-                        </View>   
-                    </View>
-
-                    {/* Tabs */}
-                    <StickyView>
+                        </View> 
+                        {/* Tabs */}
                         <View style={styles.tabContainer}>
                             <TouchableOpacity
                                 style={[styles.tab, currentTab === 0 ? styles.tabSelected : {}]}
@@ -136,7 +137,7 @@ const Post = (props) => {
                     </StickyView>
                 </CollapsibleHeaderContainer>
                 {currentTab === 0 && <AboutMeScreen/>}
-                {currentTab === 1 && <MenuScreen/>}
+                {currentTab === 1 && <MenuScreen post= {post}/>}
                 {currentTab === 2 && <LocationScreen/>}
                 {currentTab === 3 && <ReviewsScreen/>}
             </CollapsibleContainer>

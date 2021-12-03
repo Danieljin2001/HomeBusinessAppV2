@@ -2,8 +2,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 import COLOR from "../../../config/color";
 
 const {width} = Dimensions.get("window");
-const height = width / 1.5 //2 thirds of the width
-
+const height = width / 1.5 //2 thirds of the width (later change to 1.25)
 const styles = StyleSheet.create({
     hScroll: {
         height: height,
@@ -79,7 +78,7 @@ const styles = StyleSheet.create({
     },
     tabContainer: {
         flexDirection: "row",
-        paddingTop: 10
+        paddingTop: 20
     },
     tab: {
         flex: 1,
