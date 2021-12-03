@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions} from 'react-native';
-import color from "../../../../config/color";
+import COLOR from "../../../../config/color";
 
 const styles = StyleSheet.create({
     image: {
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
     },
     findServiceButton:{
-        backgroundColor: color.primary,
+        backgroundColor: COLOR.primary,
         marginVertical: 10,
         height: 50,
         width: 180,

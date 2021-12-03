@@ -9,7 +9,7 @@ import {
     TouchableOpacity
  } from "react-native";
 import styles from "./styles";
-import color from "../../../../config/color";
+import COLOR from "../../../../config/color";
 import Entypo from "react-native-vector-icons/Entypo";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
@@ -23,13 +23,13 @@ const HomeScreen = (props) => {
         <SafeAreaView style={{flex:1}}> 
             {/* locate city button and find service button and logo*/}
             <View style={styles.column}>
-                <Ionicons name="map" size= {200} color={color.primary} style={{marginBottom: 30}}/>
+                <Ionicons name="map" size= {200} color={COLOR.primary} style={{marginBottom: 30}}/>
                 <TouchableOpacity 
                     style={styles.searchButton}
                     onPress={() => navigation.navigate("Search City")}
                     activeOpacity={0.5}
                 >
-                    <Entypo name="location-pin" size={20} color={color.primary}/>
+                    <Entypo name="location-pin" size={20} color={COLOR.primary}/>
                     <Text style={styles.searchButtonText}>Locate your city</Text>
                 </TouchableOpacity>
 
@@ -45,7 +45,7 @@ const HomeScreen = (props) => {
             </View>
             <View style={{flex: 1, marginHorizontal: 20}}>
                 <Text style={{fontSize: 35, fontWeight:"400", marginTop: 30}}>Begin by{"\n"}searching for a</Text>
-                <Text style={{color: color.primary, fontSize: 45, fontWeight: "bold"}}>home-based</Text>
+                <Text style={{color: COLOR.primary, fontSize: 45, fontWeight: "bold"}}>home-based</Text>
                 <Text style={{fontSize: 35, fontWeight:"400"}}>service in your city.</Text>
             </View>
             

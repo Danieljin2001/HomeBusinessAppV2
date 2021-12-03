@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import COLOR from "../../../config/color";
 
 const {width} = Dimensions.get("window");
 const height = width / 1.5 //2 thirds of the width
@@ -76,11 +77,26 @@ const styles = StyleSheet.create({
         fontSize: 13,
         color: "grey",
     },
-    menuDescription:{
-        marginTop: 10,
-        fontSize: 16,
-        lineHeight: 20,
+    tabContainer: {
+        flexDirection: "row",
+        paddingTop: 10
     },
+    tab: {
+        flex: 1,
+        alignItems: "center",
+        paddingVertical: 10,
+        borderBottomWidth: 2,
+        borderColor: "transparent",
+    },
+    tabSelected: {
+        borderColor: COLOR.primary
+    },
+    tabTitle: {
+        fontWeight: 'bold',
+    },
+    tabTitleSelected: {
+        color: COLOR.primary
+    }
 
 
 });
