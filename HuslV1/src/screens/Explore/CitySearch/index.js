@@ -3,7 +3,7 @@ import { View, FlatList, TextInput, Text, Pressable, TouchableOpacity } from "re
 import styles from './styles.js';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { useNavigation } from "@react-navigation/native";
-import color from "../../../../config/color";
+import COLOR from "../../../../config/color";
 
 import searchResults from '../../../../assets/data/search.js';
 
@@ -33,7 +33,7 @@ const CitySearchScreen = (props) => {
                     activeOpacity= {0.5}
                 >
                     <View style={styles.iconContainer}>
-                        <Entypo name = {"location-pin"} size={30} color= {color.primary}/>
+                        <Entypo name = {"location-pin"} size={30} color= {COLOR.primary}/>
                     </View>
                     <Text style={styles.locationText}>{item.description}</Text> 
                 </TouchableOpacity>

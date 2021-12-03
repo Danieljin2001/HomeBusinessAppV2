@@ -7,11 +7,10 @@
  */
 // import 'react-native-gesture-handler';
 import React from 'react';
-import type {Node} from 'react';
 import { StatusBar} from 'react-native';
 import Router from './src/navigation/Router';
 
-const App: () => Node = () => {
+const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content"/>
