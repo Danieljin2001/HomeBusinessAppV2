@@ -8,8 +8,7 @@ const MenuScreen = (props) =>{
     const post = props.post;
     return (
         <View>
-            <Text>Menu Screen</Text>
-            <Text>Name: {post.name}</Text>
+            <Text>{post.menu}</Text>
         </View>
     );
 };

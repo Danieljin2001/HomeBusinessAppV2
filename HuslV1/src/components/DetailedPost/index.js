@@ -92,13 +92,13 @@ const Post = (props) => {
                                 {/* phone button */}
                                 <TouchableOpacity 
                                 activeOpacity={0.3}
-                                style={{alignSelf: 'flex-end', paddingHorizontal: 7 }}
+                                style={{alignSelf: 'flex-end', paddingHorizontal: 10 }}
                                 onPress={() => {Linking.openURL(`tel:${post.phoneNumber}`).catch(e=>console.warn(e))}}
                                 >
                                     <Feather name="phone" size={30} />
                                 </TouchableOpacity>
                                 {/* message button */}
-                                <Pressable style={{ alignSelf: 'flex-end', paddingHorizontal: 7}}>
+                                <Pressable style={{ alignSelf: 'flex-end', paddingHorizontal: 10}}>
                                     <Feather name="message-square" size={30}/>
                                 </Pressable>
                                 {/* more button */}
@@ -136,10 +136,10 @@ const Post = (props) => {
                         </View>
                     </StickyView>
                 </CollapsibleHeaderContainer>
-                {currentTab === 0 && <AboutMeScreen/>}
+                {currentTab === 0 && <AboutMeScreen post= {post}/>}
                 {currentTab === 1 && <MenuScreen post= {post}/>}
-                {currentTab === 2 && <LocationScreen/>}
-                {currentTab === 3 && <ReviewsScreen/>}
+                {currentTab === 2 && <LocationScreen post= {post}/>}
+                {currentTab === 3 && <ReviewsScreen post= {post}/>}
             </CollapsibleContainer>
         </View>
     );

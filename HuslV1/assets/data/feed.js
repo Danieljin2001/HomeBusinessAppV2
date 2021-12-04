@@ -5,6 +5,7 @@ export default [
     profilePic: 'https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg',
     menu: "- full set: $50\n- half set: $30\n- styling: $90\n- filling: $20\n- dye: $60\n- short fade: $40\n- soething: $40\n- something: $40\n- somethingelse: $60\n- sometihing again: $90\n- somethingsoemthing: $60",
     serviceType: 'barber',
+    locationImages: ["https://www.swaggermagazine.com/home/wp-content/uploads/2017/09/img_9010jpg.jpg", "https://www.castanet.net/content/2020/12/the_barber_chair_inside_main_p3497216.jpg", "https://images.squarespace-cdn.com/content/v1/570426e307eaa0f67ed1cfa9/1605833173502-SBWKE4O3JD5BV3ECL69L/CW-Inglewood-Location-Home.jpg"],
     name: 'Dami Cuts',
     ratingTotal: '200',
     ratingAverage: '4.5',
@@ -23,6 +24,7 @@ export default [
     profilePic: 'https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg',
     menu: "- full set: $50\n- half set: $30\n- styling: $90\n- filling: $20\n- dye: $60\n- short fade: $40\n- soething: $40\n- something: $40\n- somethingelse: $60\n- sometihing again: $90\n- somethingsoemthing: $60",
     serviceType: 'barber',
+    locationImages: ["https://www.swaggermagazine.com/home/wp-content/uploads/2017/09/img_9010jpg.jpg", "https://www.castanet.net/content/2020/12/the_barber_chair_inside_main_p3497216.jpg", "https://images.squarespace-cdn.com/content/v1/570426e307eaa0f67ed1cfa9/1605833173502-SBWKE4O3JD5BV3ECL69L/CW-Inglewood-Location-Home.jpg"],
     name: 'Great Cuts',
     ratingTotal: '140',
     ratingAverage: '4.0',
@@ -41,6 +43,7 @@ export default [
     profilePic: 'https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg',
     menu: "- full set: $50\n- half set: $30\n- styling: $90\n- filling: $20\n- dye: $60\n- short fade: $40\n- soething: $40\n- something: $40\n- somethingelse: $60\n- sometihing again: $90\n- somethingsoemthing: $60",
     serviceType: 'barber',
+    locationImages: ["https://www.swaggermagazine.com/home/wp-content/uploads/2017/09/img_9010jpg.jpg", "https://www.castanet.net/content/2020/12/the_barber_chair_inside_main_p3497216.jpg", "https://images.squarespace-cdn.com/content/v1/570426e307eaa0f67ed1cfa9/1605833173502-SBWKE4O3JD5BV3ECL69L/CW-Inglewood-Location-Home.jpg"],
     name: 'Razor Edge',
     ratingTotal: '99',
     ratingAverage: '4.0',
@@ -59,6 +62,7 @@ export default [
     profilePic: 'https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg',
     menu: "- full set: $50\n- half set: $30\n- styling: $90\n- filling: $20\n- dye: $60\n- short fade: $40\n- soething: $40\n- something: $40\n- somethingelse: $60\n- sometihing again: $90\n- somethingsoemthing: $60",
     serviceType: 'barber',
+    locationImages: ["https://www.swaggermagazine.com/home/wp-content/uploads/2017/09/img_9010jpg.jpg", "https://www.castanet.net/content/2020/12/the_barber_chair_inside_main_p3497216.jpg", "https://images.squarespace-cdn.com/content/v1/570426e307eaa0f67ed1cfa9/1605833173502-SBWKE4O3JD5BV3ECL69L/CW-Inglewood-Location-Home.jpg"],
     name: 'Clean Fades',
     ratingTotal: '55',
     ratingAverage: '4.0',
@@ -71,4 +75,5 @@ export default [
       longitude: -16.2291304,
     },
   },
+  
 ];
