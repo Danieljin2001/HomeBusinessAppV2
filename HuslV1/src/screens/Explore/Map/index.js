@@ -10,7 +10,7 @@ const MapScreen = (props) => {
     return (
         <View style = {{height}}>
           <View style={styles.container}>
-            <Text> Map </Text>
+            <Text> Map hello</Text>
           </View>
           <ActionSheet/>
         </View>
