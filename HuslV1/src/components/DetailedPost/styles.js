@@ -20,12 +20,15 @@ const styles = StyleSheet.create({
         marginRight: 5,
     },
     profileRow: {
-        marginVertical: 10,
-        marginHorizontal: 10,
+        marginVertical: 20,
+        marginHorizontal: 20,
         flexDirection: "row",
+        borderBottomWidth: 1,
+        borderBottomColor: "lightgrey",
+        paddingBottom: 20,
     },
     row: {
-        marginHorizontal: 10,
+        marginHorizontal: 20,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: 'space-between',

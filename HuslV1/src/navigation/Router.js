@@ -40,7 +40,7 @@ const Router = (props) => {
                     name={"Post"}
                     component={PostScreen}
                     options={{
-                        // headerShown: false
+                        headerShown: false
                     }}
                 />
                 <Stack.Screen 

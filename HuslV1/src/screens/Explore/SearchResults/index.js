@@ -11,7 +11,12 @@ const SearchResultsScreen = (props) => {
         <SafeAreaView>
             <FlatList
                 data={feed}
-                renderItem={({item}) => <Post post={item}/>}
+                keyExtractor={item => `${item.id}`}
+                renderItem={({item}) => {
+                    return(
+                        <Post post={item}/>
+                )
+                }}
             />
         </SafeAreaView>
     );
