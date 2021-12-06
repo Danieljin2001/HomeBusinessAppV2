@@ -14,6 +14,7 @@ import COLOR from "../../../config/color";
 import ViewMoreText from 'react-native-view-more-text';
 
 import { StatusBar } from "react-native";
+import color from "../../../config/color";
 
 const {width} = Dimensions.get("window");
 const height = width / 1.25 //2 thirds of the width (later change to 1.25)
@@ -30,12 +31,12 @@ const Post = (props) => {
 
     function renderViewMore(onPress){
         return(
-          <Text onPress={onPress} style={{lineHeight: 25, textDecorationLine: "underline", fontWeight: "600" }}>View more</Text>
+          <Text onPress={onPress} style={{lineHeight: 25, textDecorationLine: "underline", fontWeight: "600", color:"black" }}>View more</Text>
         )
       }
     function renderViewLess(onPress){
         return(
-          <Text onPress={onPress} style={{lineHeight: 25, textDecorationLine: "underline", fontWeight: "600" }}>View less</Text>
+          <Text onPress={onPress} style={{lineHeight: 25, textDecorationLine: "underline", fontWeight: "600", color: "black"}}>View less</Text>
         )
       }
 

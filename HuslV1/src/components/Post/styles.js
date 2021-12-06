@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         marginHorizontal: 10,
-        marginVertical: 20
+        marginBottom: 50
     },    
     image: {
         //aspectRatio: 3/2,

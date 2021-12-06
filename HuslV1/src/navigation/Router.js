@@ -33,7 +33,7 @@ const Router = (props) => {
                     name={"Map Screen"}
                     component={MapScreen}
                     options={{
-                        //headerShown: false
+                        headerShown: false
                     }}
                 />
                 <Stack.Screen 
