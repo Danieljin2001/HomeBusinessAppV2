@@ -142,6 +142,7 @@ const Post = (props) => {
                         pagingEnabled 
                         horizontal 
                         style={styless.banner(scrollA)} //-20 because of the marginHorizontal: 10
+                        keyExtractor={item => `${item}`} //!!!!this is wrong but put in to stop warning
                         renderItem={({item})=> (
                             <Image
                                 style={[styles.image]}
@@ -226,6 +227,7 @@ const Post = (props) => {
                         pagingEnabled
                         horizontal
                         style ={{marginBottom: 20, borderRadius: 10}}
+                        keyExtractor={item => `${item}`} //!!!!this is wrong but put in to stop warning
                         renderItem={({item}) => (
                             <Image
                                 style={{resizeMode: "cover", borderRadius: 10}}

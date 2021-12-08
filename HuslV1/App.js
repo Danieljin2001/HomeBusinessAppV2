@@ -7,20 +7,24 @@
  */
 // import 'react-native-gesture-handler';
 import React from 'react';
+import { SafeAreaView, View } from 'react-native';
 import { StatusBar} from 'react-native';
 import Router from './src/navigation/Router';
+
+import FindServiceScreen from './src/screens/Explore/FindService';
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content"/>
-      <Router />
-      {/* <SafeAreaView> */}
+      {/* <StatusBar barStyle="dark-content"/> */}
+      {/* <Router /> */}
+      <View>
       {/* <MapScreen/> */}
       {/* <HomeScreen/> */}
       {/* <SearchResultsScreen/> */}
       {/* <CitySearchScreen/> */}
-      {/* </SafeAreaView> */}
+        <FindServiceScreen/>
+      </View>
     </>
   );
 };
