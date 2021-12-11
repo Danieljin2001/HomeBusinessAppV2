@@ -5,6 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import COLOR from "../../../../config/color";
 import { useNavigation } from "@react-navigation/native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import Accordion from "../../../components/Accordion";
 
 
 const { height, width } = Dimensions.get('window');
@@ -29,7 +30,7 @@ export const statusBarHeight = Platform.select({
 const textHeight = (height * 0.22);
 
 const FindServiceScreen = (props) => {
-    //const navigation = useNavigation();
+    const navigation = useNavigation();
     return(
         <View>
             {/* Background color */}
@@ -39,7 +40,7 @@ const FindServiceScreen = (props) => {
                 //locations = {[0.5, 0.8]}
                 end = {{ x: 0.9, y: 0.6}}
             >
-                <Text style = {{color: "white", marginLeft: 15,fontSize: 30, fontWeight: "600" , marginTop: textHeight}}>Select a category {"\n"}and find a service</Text>
+                <Text style = {{color: "white", marginLeft: 15,fontSize: 30, fontWeight: "600" , marginTop: textHeight}}>Select a category {"\n"}and find a service.</Text>
             </LinearGradient>
 
             {/* bottomsheet */}
@@ -61,12 +62,12 @@ const FindServiceScreen = (props) => {
                                 backgroundColor: "white",
                                 marginLeft: 15,
                             }}
-                            //onPress = {() => navigation.goBack()}
+                            onPress = {() => navigation.goBack()}
                         >
                             <MaterialIcons name="arrow-back-ios" size={20} color={"black"}/>
                         </TouchableOpacity>
                     </View>
-                    
+                    <Accordion/>
 
                 </BottomSheetScrollView>
 

@@ -8,6 +8,7 @@ import HomeScreen from "../screens/Explore/Home";
 import MapScreen from "../screens/Explore/Map";
 import HomeTabNavigator from "./HomeTabNavigator";
 import PostScreen from "../screens/Explore/PostScreen";
+import FindServiceScreen from "../screens/Explore/FindService";
 
 const Stack = createStackNavigator();
 
@@ -30,10 +31,17 @@ const Router = (props) => {
                     }}
                 />
                 <Stack.Screen 
+                    name={"Find Service"}
+                    component={FindServiceScreen}
+                    options={{
+                        headerShown: false
+                    }}
+                />
+                <Stack.Screen 
                     name={"Map Screen"}
                     component={MapScreen}
                     options={{
-                        //headerShown: false
+                        headerShown: false
                     }}
                 />
                 <Stack.Screen 

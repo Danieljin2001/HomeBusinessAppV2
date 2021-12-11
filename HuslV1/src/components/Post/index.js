@@ -29,6 +29,7 @@ const Post = (props) => {
                     pagingEnabled 
                     horizontal 
                     style={{height: height, width: width-20, borderRadius: 10,}} //-20 because of the marginHorizontal: 10
+                    keyExtractor={item => `${item}`} //!!!!this is wrong but put in to stop warning
                     renderItem={({item})=> (
                         <TouchableWithoutFeedback onPress={goToPostPage}>
                         <Image

@@ -2,10 +2,7 @@ import React from "react";
 import { 
     SafeAreaView,
     View, 
-    ImageBackground, 
     Text,
-    Pressable,
-    TouchableHighlight,
     TouchableOpacity
  } from "react-native";
 import styles from "./styles";
@@ -33,9 +30,10 @@ const HomeScreen = (props) => {
                     <Text style={styles.searchButtonText}>Locate your city</Text>
                 </TouchableOpacity>
 
+                {/* FIND SERVICE BUTTON */}
                 <TouchableOpacity
                     style={styles.findServiceButton}
-                    onPress={() => navigation.navigate("Map Screen")}
+                    onPress={() => navigation.navigate("Find Service")}
                     activeOpacity= {0.5}
                 >
                     <Text style= {styles.findServiceButtonText}>Find service</Text>
