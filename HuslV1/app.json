@@ -18,6 +18,7 @@
     ],
     "ios": {
       "supportsTablet": true,
+      "ios.bundleIdentifier": "com.HUSL.HUSL",
       "ios.config.googleMapsApiKey": "AIzaSyDudmJOD83fqnRLmgqKXOsPnQWkJ7oVmdE"
     },
     "android": {

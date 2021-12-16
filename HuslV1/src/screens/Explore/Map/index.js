@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, Dimensions, SafeAreaView } from "react-native";
 import styles from './styles';
 import ActionSheet from "../../../components/ActionSheet";
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 
 // const {height} = Dimensions.get("window");
@@ -17,6 +17,7 @@ const MapScreen = (props) => {
     return (
       <View style={styles.container}>
         <MapView 
+          provider={PROVIDER_GOOGLE}
           initialRegion={ initRegion }
           style={styles.map} />
       </View>
